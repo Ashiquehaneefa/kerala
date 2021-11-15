@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/signup.css" />
+    <title>Sign Up</title>
+  </head>
+
+  <body background="images/nature3.jpg"></body>
+    <header>
+      <img src="images/logo.png" alt="logo" id="logo" />
+      <a href="index.html" id="home">Home</a>
+    </header>
+
+    <div class="container">
+      <form
+        id="my-form"
+        class="box-form"
+        onsubmit="return validateSignup()"
+        action="index.html#about"
+      >
+        <h2>Sign up</h2>
+        <div class="box">
+          <i class="fas fa-user-circle"></i>
+          <input
+            id="name"
+            placeholder="Name"
+            type="text"
+            onclick="resetmssg()"
+          />
+          <small>message to user</small>
+        </div>
+        <div class="box">
+          <i class="fas fa-user-cog"></i>
+          <input id="username" placeholder="Username" type="text" />
+          <small>message to user </small>
+        </div>
+        <div class="box">
+          <i class="fas fa-at"></i>
+          <input id="email" placeholder="Email" type="email" />
+          <small>message to user </small>
+        </div>
+        <div class="box">
+          <i class="fas fa-mobile"></i>
+          <input id="mob" placeholder="Phone number" type="text" />
+          <small id="mssg">message to user </small>
+        </div>
+        <div class="box">
+          <i class="fas fa-unlock"></i>
+          <input
+            id="pass"
+            onkeyup="trigger()"
+            type="Password"
+            placeholder="Password"
+          />
+          <small>message to user </small>
+          <div class="indicator">
+            <span class="weak"></span>
+            <span class="medium"></span>
+            <span class="strong"></span>
+          </div>
+          <div class="text"></div>
+        </div>
+        <div class="box">
+          <i class="fas fa-unlock"></i>
+          <input type="password" placeholder="Retype Password" id="pass2" />
+          <small>message to user </small>
+        </div>
+
+        <br /><br />
+        <button class="bttn" type="submit">
+          <span class="sub">login</span>
+        </button>
+      </form>
+    </div>
+
+    <script src="js/signup.js"></script>
+  </body>
+</html>
